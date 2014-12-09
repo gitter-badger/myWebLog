@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/style.css" />
 </head>
 <body>
-	<?php include("includes/menu.php"); ?>
+	<?php include("../Includes/menu.php"); ?>
 	
 <div id="compte">
 	<p>Nombre de blog :</p>
@@ -21,6 +21,6 @@
 		<li><a href="#">Livre d'or</a></li>
 	</ul>
 </div>
-	<?php include("Includes/footer.php"); ?>
+	<?php include("../Includes/footer.php"); ?>
 </body>
 </html>
