@@ -16,7 +16,17 @@
 			session_start();
 			$_SESSION['login'] = $login;
 			$_SESSION['pwd'] = $pass;
-			header('Location: accueil.php');
+			$check = $connect->prepare("SELECT * FROM user_profile WHERE login = '$login' AND passwd = '$pass'");
+			$check->execute();
+			$adminOrNot = $check->fetch();
+			if($adminOrNot['id_type_account'] == 1)
+			{
+				header('Location: ../admin/admin.php');
+			}
+			else
+			{
+				header('Location: accueil.php');
+			}
 		}
 		else
 		{
