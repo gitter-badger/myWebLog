@@ -12,7 +12,7 @@
 		$password = $_POST['password'];
 		$password = sha1($password);
 		$mail = $_POST['email'];
-		$sexe = $_POST['civilite'];
+		$sexe = $_POST['sexe'];
 						 
 		$insertAccount = "INSERT INTO user_profile VALUES ('', '$nom', '$prenom', '$mail', '','$sexe', '', '$login', '$password', 2)";
 		$register = $connect->prepare($insertAccount);
