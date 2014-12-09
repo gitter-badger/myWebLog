@@ -5,7 +5,7 @@
 		<li><a href="accueil.html">Accueil</a></li>
 		<li><a href="">Contacter un responsable</a></li>
 		<li><a href="">Panel administrateur</a></li>
-		<li>Déconnexion</li>
+		<li><a href="deconnexion.php">Déconnexion</a></li>
 	</ul>
 </nav>
 <aside id="listePost">

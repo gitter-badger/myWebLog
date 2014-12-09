@@ -1,14 +1,19 @@
+<?php
+	include('accueilSQL.php');
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
 	<title>Accueil</title>
-	<?php include("PHP/head.php"); ?>
+	<?php include("../Includes/head.php"); ?>
 </head>
-<div id="header">
-	<?php include("PHP/menu.php"); ?>
-</div>
+
 
 <body>
+	<div id="header">
+		<?php include("../Includes/menu.php"); ?>
+	</div>
 	<div id="pagePost">
 
 		<div id="post1">
@@ -28,7 +33,7 @@
 
 
 	<div id="footer">
-		<?php include("PHP/footer.php"); ?>
+		<?php include("../Includes/footer.php"); ?>
 	</div>
 </body>
 </html>
