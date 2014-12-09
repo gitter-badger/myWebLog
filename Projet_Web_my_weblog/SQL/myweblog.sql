@@ -74,6 +74,7 @@ INSERT INTO `user_profile` (`id_user`, `nom`, `prenom`, `mail`, `date_naissance`
 (3, 'COQUELET', 'Christophe', 'coquelet.c@gmail.com', '0000-00-00', 'M.', '', 'coquel_d', 'eb09f436d7c8cb4063d342e58c4e6b796313bcba', 2),
 (5, 'test1', 'test2', 'test@test.test', '0000-00-00', 'M.', '', 'test_3', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3', 2),
 (6, 'Team', 'Rocket', 'team@rocket.poke', '0000-00-00', 'M.', '', 'TR', 'd9e83874d260f2f10d48d98c0b773b836096d426', 2);
+(7,'Beors','Sofiane','s.beors@gmail.com','0000-00-00','M.','','kidd_soso','40bd001563085fc35165329ea1ff5c5ecbdbbeef',2);
 
 -- --------------------------------------------------------
 
