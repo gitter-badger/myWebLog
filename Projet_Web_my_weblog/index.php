@@ -4,6 +4,7 @@
 	<meta name="description" content="Description de ma page web."/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+	<title>MyWeblog</title>
 </head>
 
 
@@ -34,22 +35,22 @@
 		<form method="post" action="PHP/registerSQL.php">
 			
 
-			<div id="sexe">
+			<div id="divSexe">
 				<span>Sexe :</span>
-				<input type="radio" name="sexe" value="homme" class="sexe" />
+				<input type="radio" name="sexe" value="homme" class="sexe" id="sexe"/>
 				<label for="sexe">Homme</label>
 
-				<input type="radio" name="sexe" value="femme" class="sexe"/>
+				<input type="radio" name="sexe" value="femme" class="sexe" id="lsexe"/>
 				<label for="lsexe">Femme</label>
 
-				<input type="radio" name="sexe" value="autre" class="sexe"/>
-				<label for="lsexe">Autre</label>
+				<input type="radio" name="sexe" value="autre" class="sexe" id="asexe"/>
+				<label for="asexe">Autre</label>
 
 				</div>
 
 				<div id="civil">
 				<label for="lcivilite">Civilité:</label> 
-				<select name="civilite" id="civilite">
+				<select name="civilite" id="lcivilite">
 					<option>M.</option>
 					<option>Mme.</option>
 				</select>
