@@ -21,12 +21,15 @@
 			$adminOrNot = $check->fetch();
 			if($adminOrNot['id_type_account'] == 1)
 			{
-				header('Location: ../admin/admin.php');
+				$_SESSION['admin'] = true;
+				//header('Location: ../admin/admin.php');
 			}
 			else
 			{
-				header('Location: fetchInfo.php');
+				$_SESSION['admin'] = false;
+				//header('Location: fetchInfo.php');
 			}
+			header('Location: fetchInfo.php');
 		}
 		else
 		{
