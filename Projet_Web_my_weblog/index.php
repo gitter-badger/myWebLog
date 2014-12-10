@@ -45,7 +45,7 @@
 				<label for="lsexe">Femme</label>
 
 				<input type="radio" name="sexe" value="autre" class="sexe" id="asexe"/>
-				<label for="asexe">Autre</label>
+				<label for="asexe">Geek</label>
 
 				</div>
 
