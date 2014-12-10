@@ -1,11 +1,14 @@
--- phpMyAdmin SQL Dump
--- version 4.1.14
--- http://www.phpmyadmin.net
---
--- Client :  127.0.0.1
--- Généré le :  Mar 09 Décembre 2014 à 17:13
--- Version du serveur :  5.6.17
--- Version de PHP :  5.5.12
+# ************************************************************
+# Sequel Pro SQL dump
+# Version 4135
+#
+# http://www.sequelpro.com/
+# http://code.google.com/p/sequel-pro/
+#
+# Host: localhost (MySQL 5.5.38)
+# Database: myweblog
+# Generation Time: 2014-12-09 20:14:01 +0000
+# ************************************************************
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -70,6 +73,7 @@ INSERT INTO `user_profile` (`id_user`, `nom`, `prenom`, `mail`, `date_naissance`
 (3, 'COQUELET', 'Christophe', 'coquelet.c@gmail.com', '0000-00-00', 'M.', '', 'coquel_d', 'eb09f436d7c8cb4063d342e58c4e6b796313bcba', 2),
 (5, 'test1', 'test2', 'test@test.test', '0000-00-00', 'M.', '', 'test_3', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3', 2),
 (6, 'Team', 'Rocket', 'team@rocket.poke', '0000-00-00', 'M.', '', 'TR', 'd9e83874d260f2f10d48d98c0b773b836096d426', 2);
+(7,'Beors','Sofiane','s.beors@gmail.com','0000-00-00','M.','','kidd_soso','40bd001563085fc35165329ea1ff5c5ecbdbbeef',2);
 
 -- --------------------------------------------------------
 
@@ -83,6 +87,12 @@ CREATE TABLE IF NOT EXISTS `user_type` (
   PRIMARY KEY (`id_type_account`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+
+
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
