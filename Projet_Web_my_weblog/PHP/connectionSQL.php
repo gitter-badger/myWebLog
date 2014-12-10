@@ -19,18 +19,21 @@
 			$check = $connect->prepare("SELECT * FROM user_profile WHERE login = '$login' AND passwd = '$pass'");
 			$check->execute();
 			$adminOrNot = $check->fetch();
-			if($adminOrNot['id_type_account'] == 1)
+			if($adminOrNot['id_type_account'] == 1 || $adminOrNot['id_type_account'] == 3)
 			{
-				header('Location: ../admin/admin.php');
+				$_SESSION['admin'] = true;
+				//header('Location: ../admin/admin.php');
 			}
 			else
 			{
-				header('Location: fetchInfo.php');
+				$_SESSION['admin'] = false;
+				//header('Location: fetchInfo.php');
 			}
+			header('Location: fetchInfo.php');
 		}
 		else
 		{
-			die('error');
+			
 			
 		}
 		
