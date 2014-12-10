@@ -52,8 +52,8 @@
 				<div id="civil">
 				<label for="lcivilite">Civilité:</label> 
 				<select name="civilite" id="lcivilite">
-					<option>M.</option>
-					<option>Mme.</option>
+					<option>M. Geek</option>
+					<option>Mme. Geekette</option>
 				</select>
 
 				</div>
