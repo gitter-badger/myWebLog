@@ -38,7 +38,6 @@ CREATE TABLE IF NOT EXISTS `billet` (
   `content` text,
   `tags` varchar(255) DEFAULT NULL,
   `id_tags` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_billet`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

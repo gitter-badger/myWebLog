@@ -25,7 +25,7 @@
 			}
 			else
 			{
-				header('Location: accueil.php');
+				header('Location: fetchInfo.php');
 			}
 		}
 		else

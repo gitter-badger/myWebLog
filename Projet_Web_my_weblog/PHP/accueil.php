@@ -31,9 +31,6 @@
 		</div>
 	</div>
 
-
-
-
 	<div id="footer">
 		<?php include("../Includes/footer.php"); ?>
 	</div>

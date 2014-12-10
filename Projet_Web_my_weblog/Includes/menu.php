@@ -2,14 +2,14 @@
 
 <nav id="navTop">
 	<ul>
-		<li><a href="accueil.html">Accueil</a></li>
-		<li><a href="">Contacter un responsable</a></li>
-		<li><a href="">Panel administrateur</a></li>
+		<li><a href="accueil.php">Accueil</a></li>
+		<li><a href="contact.php">Contacter un responsable</a></li>
+		<li><a href="../admin/admin.php">Panel administrateur</a></li>
 		<li><a href="deconnexion.php">Déconnexion</a></li>
 	</ul>
 </nav>
 <aside id="listePost">
-	<p>nomUtilisateur</p>
+	<p>Bonjour, <?php echo $_SESSION['name'] . " " . $_SESSION['surname']; ?></p>
 	<input type="text" name="search" id="idSearch" class="clSearch" placeholder="#Recherche" />
 	<h2>Liste des Posts</h2>
 	<ul>
