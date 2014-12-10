@@ -46,7 +46,7 @@ function verifInscr()
 	if (email.value.length == 0)
 	{
 		nom.style.borderColor = "#D42020";
-		alert("Vous email est invalide !");
+		alert("Votre email est invalide !");
 	}
 
 }
