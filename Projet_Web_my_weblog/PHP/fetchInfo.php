@@ -15,5 +15,13 @@
 			$_SESSION['tel'] = $recupFinal['telephone'];
 		}
 	}
-	header('Location: accueil.php');
+	if($_SESSION['admin'] === false)
+	{
+		  header('Location: accueil.php');
+	}
+	else
+	{
+		header('Location: ../admin/admin.php');
+	}
+	   
 ?>
