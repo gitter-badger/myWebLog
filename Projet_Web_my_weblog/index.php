@@ -18,7 +18,7 @@
 	<div id="formulaireConnexion">
 		<h2>Connexion</h2>
 		
-		<form method="post" action="" class="connect">
+		<form name="loginForm" method="post" action="PHP/connexionSQL.php" id="formCo" class="connect">
 			<p>
 				<input type="text" name="pseudo" class="inputlog" id="login" placeholder="Login"/>
 				<input type="password" name="motpass" class="inputlog" id="pwd" placeholder="Password"/>
@@ -33,7 +33,7 @@
 
 		<h2>Inscription</h2>
 
-		<form method="post" action="PHP/registerSQL.php">
+		<form name="registerForm" method="post" action="PHP/registerSQL.php" id="formInscr">
 			
 
 			<div id="divSexe">

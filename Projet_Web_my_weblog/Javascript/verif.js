@@ -19,7 +19,7 @@ function verifInscr()
 	var email = document.getElementById("email");
 
 
-	if (nom.value.length == 0)
+	if (nom.value.length == 0 )
 	{
 		nom.style.borderColor = "#D42020";
 		alert("Vous n'avez pas renseigné votre nom !");
