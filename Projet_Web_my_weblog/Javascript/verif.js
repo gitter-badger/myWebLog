@@ -18,6 +18,8 @@ function verifInscr()
 	var password = document.getElementById("password");
 	var email = document.getElementById("email");
 
+	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
 
 	if (nom.value.length == 0 )
 	{
@@ -43,7 +45,9 @@ function verifInscr()
 		alert("Vous n'avez pas renseigné de mot de passe !");
 	}
 
-	if (email.value.length == 0)
+   var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+
+	if (email.value.length == 0 || !regex.test(email.value))
 	{
 		email.style.borderColor = "#D42020";
 		alert("Votre email est invalide !");
