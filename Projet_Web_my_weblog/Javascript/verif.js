@@ -27,25 +27,25 @@ function verifInscr()
 
 	if (prenom.value.length == 0)
 	{
-		nom.style.borderColor = "#D42020";
+		prenom.style.borderColor = "#D42020";
 		alert("Vous n'avez pas renseigné votre prenom !");
 	}
 
 	if (pseudo.value.length == 0)
 	{
-		nom.style.borderColor = "#D42020";
+		pseudo.style.borderColor = "#D42020";
 		alert("Vous n'avez pas renseigné votre pseudo !");
 	}
 
 	if (password.value.length == 0)
 	{
-		nom.style.borderColor = "#D42020";
+		password.style.borderColor = "#D42020";
 		alert("Vous n'avez pas renseigné de mot de passe !");
 	}
 
 	if (email.value.length == 0)
 	{
-		nom.style.borderColor = "#D42020";
+		email.style.borderColor = "#D42020";
 		alert("Votre email est invalide !");
 	}
 
