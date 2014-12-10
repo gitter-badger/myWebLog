@@ -39,13 +39,12 @@
 	</aside>
 
 	<div id="compte">
-		<p>Nombre de blog :</p>
 		<p>Nombre de post :</p>
 		<p>Nombre de likes :</p>
 	</div>
 	<div id="gestion">
 		<ul>
-			<li><a href="#">Gestion des membres</a></li>
+			<li><a href="">Gestion des membres</a></li>
 			<li><a href="#">Forum</a></li>
 			<li><a href="#">Livre d'or</a></li>
 		</ul>
