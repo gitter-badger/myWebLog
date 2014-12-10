@@ -45,15 +45,15 @@
 				<label for="lsexe">Femme</label>
 
 				<input type="radio" name="sexe" value="autre" class="sexe" id="asexe"/>
-				<label for="asexe">Autre</label>
+				<label for="asexe">Geek</label>
 
 				</div>
 
 				<div id="civil">
 				<label for="lcivilite">Civilité:</label> 
 				<select name="civilite" id="lcivilite">
-					<option>M.</option>
-					<option>Mme.</option>
+					<option>M. Geek</option>
+					<option>Mme. Geekette</option>
 				</select>
 
 				</div>
