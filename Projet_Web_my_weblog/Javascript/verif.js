@@ -56,10 +56,10 @@ function verifRegister (e)
 
 window.addEventListener("load", function ()
 {
-	var fromInscr = document.getElementById("fromInscr");
+	var formInscr = document.getElementById("fromInscr");
 	console.log("passe");
 	var formCo = document.getElementById("formCo");
 
-	fromInscr.addEventListener("submit", verifRegister);
+	formInscr.addEventListener("submit", verifRegister);
 	formCo.addEventListener("submit", verifConnexion);
 });
