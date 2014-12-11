@@ -59,6 +59,16 @@ function verifRegister (e)
 
 window.addEventListener("load", function ()
 {
-	document.getElementById("fromInscr").addEventListener("submit", verifRegister);
-	document.getElementById("formCo").addEventListener("submit", verifConnexion);
+	var fromInscr = document.getElementById("fromInscr");
+	var formCo = document.getElementById("formCo");
+
+	if (fromInscr)
+	{
+		fromInscr.addEventListener("submit", verifRegister);
+	};
+
+	if (formCo)
+	{
+		formCo.addEventListener("submit", verifConnexion);
+	};
 });
