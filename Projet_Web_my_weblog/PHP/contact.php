@@ -10,7 +10,7 @@
 
 	<div id="contactMail">
 			<h2 id="h2Contact">Contactez nous</h2>
-		<form method="POST" action="" id="contact">
+		<form method="POST" action="contactSQL.php" id="contact">
 
 			<input type="text" name="nom" id="nomMail" class="clmail" placeholder="Nom"/>
 			<input type="text" name="object" id="object" class="clmail" placeholder="objet"/>
