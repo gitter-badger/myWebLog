@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 11 Décembre 2014 à 15:40
+-- Généré le :  Jeu 11 Décembre 2014 à 16:19
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `epitech_tp`
 --
+CREATE DATABASE IF NOT EXISTS `epitech_tp` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `epitech_tp`;
 
 -- --------------------------------------------------------
 
@@ -14530,6 +14532,8 @@ INSERT INTO `tp_salle` (`id_salle`, `numero_salle`, `nom_salle`, `etage_salle`, 
 --
 -- Base de données :  `myweblog`
 --
+CREATE DATABASE IF NOT EXISTS `myweblog` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `myweblog`;
 
 -- --------------------------------------------------------
 
@@ -14604,6 +14608,8 @@ CREATE TABLE IF NOT EXISTS `user_type` (
 --
 -- Base de données :  `test`
 --
+CREATE DATABASE IF NOT EXISTS `test` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `test`;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

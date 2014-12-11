@@ -54,9 +54,10 @@ function verifRegister (e)
 	e.preventDefault();
 }
 
-window.addEventListener("onload", function ()
+window.addEventListener("load", function ()
 {
 	var fromInscr = document.getElementById("fromInscr");
+	console.log("passe");
 	var formCo = document.getElementById("formCo");
 
 	fromInscr.addEventListener("submit", verifRegister);
