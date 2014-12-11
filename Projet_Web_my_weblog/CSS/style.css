@@ -186,6 +186,11 @@ header h1
 	margin-bottom: 15px;
 }
 
+#nom
+{
+	width: 200px;
+}
+
 #info
 {
 	width: 180px;
@@ -247,12 +252,7 @@ footer span
 {
 	color: #e74c3c;
 }
-#nom
-{
-	width: 150px;
-	text-align: center;
-	margin-bottom: 15px;
-}
+
 #object
 {
 	width: 400px;
