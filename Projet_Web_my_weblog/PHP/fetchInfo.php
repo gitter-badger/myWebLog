@@ -1,6 +1,7 @@
 <?php
-	include('myPDO.php');
 	session_start();
+	include('myPDO.php');
+	
 	if(isset($_SESSION['login']) && isset($_SESSION['pwd']))
 	{
 		$sql = "SELECT * FROM user_profile WHERE login = '" . $_SESSION['login'] . "' AND passwd = '" . $_SESSION['pwd'] . "'";

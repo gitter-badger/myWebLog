@@ -54,18 +54,11 @@ function verifRegister (e)
 	e.preventDefault();
 }
 
-window.addEventListener("load", function ()
+window.addEventListener("onload", function ()
 {
 	var fromInscr = document.getElementById("fromInscr");
 	var formCo = document.getElementById("formCo");
 
-	if (fromInscr)
-	{
-		fromInscr.addEventListener("submit", verifRegister);
-	};
-
-	if (formCo)
-	{
-		formCo.addEventListener("submit", verifConnexion);
-	};
+	fromInscr.addEventListener("submit", verifRegister);
+	formCo.addEventListener("submit", verifConnexion);
 });

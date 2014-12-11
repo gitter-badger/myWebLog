@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include('myPDO.php');
 
 	//check connection
@@ -13,7 +14,7 @@
 		
 		if($loged == TRUE)
 		{
-			session_start();
+			
 			$_SESSION['login'] = $login;
 			$_SESSION['pwd'] = $pass;
 			$check = $connect->prepare("SELECT * FROM user_profile WHERE login = '$login' AND passwd = '$pass'");
@@ -33,6 +34,7 @@
 		}
 		else
 		{
+			session_destroy();
 			header('Location: ../index.php');
 		}
 		
