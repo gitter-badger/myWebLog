@@ -33,18 +33,18 @@
 
 		<h2>Inscription</h2>
 
-		<form name="registerForm" method="post" action="PHP/registerSQL.php" id="formInscr">
+		<form name="registerForm" id="formInscr" method="post" action="PHP/registerSQL.php">
 			
 
 			<div id="divSexe">
 				<span>Sexe :</span>
-				<input type="radio" name="sexe" value="homme" class="sexe" id="sexe"/>
+				<input type="radio" name="sexe" value="homme" class="sexe" id="sexe">
 				<label for="sexe">Homme</label>
 
-				<input type="radio" name="sexe" value="femme" class="sexe" id="lsexe"/>
+				<input type="radio" name="sexe" value="femme" class="sexe" id="lsexe">
 				<label for="lsexe">Femme</label>
 
-				<input type="radio" name="sexe" value="autre" class="sexe" id="asexe"/>
+				<input type="radio" name="sexe" value="geek" class="sexe" id="asexe">
 				<label for="asexe">Geek</label>
 
 				</div>
@@ -56,23 +56,23 @@
 					<option>Mme. Geekette</option>
 				</select>
 
-				</div>
+			</div>
 
 
-				<div id="info">
-				<input type="text" name="nom" id="nom" class="inscr" placeholder="Nom"/>
+			<div id="info">
+				<input type="text" name="nom" id="nom" class="inscr" placeholder="Nom">
  
-				<input type="text" name="prenom" id="prenom" class="inscr" placeholder="Prénom"/>
+				<input type="text" name="prenom" id="prenom" class="inscr" placeholder="Prénom">
 
-				<input type="text" name="login" class="inscr" id="pseudo" placeholder="Pseudo"/>
+				<input type="text" name="login" class="inscr" id="pseudo" placeholder="Pseudo">
 
-				<input type="password" name="password" class="inscr" id="password" placeholder="Password"/>
+				<input type="password" name="password" class="inscr" id="password" placeholder="Password">
 				
-				<input type="text" name="email" id="email" class="inscr" placeholder="Email"/>
+				<input type="text" name="email" id="email" class="inscr" placeholder="Email">
 
-				<input type="submit" name="valid" id="valid" onclick="verifInscr()" value="Inscription" />
+				<input type="submit" name="valid" id="valid" value="Inscription">
 
-				</div>
+			</div>
 			
 		</form>
 

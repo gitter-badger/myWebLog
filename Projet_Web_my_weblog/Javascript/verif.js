@@ -9,7 +9,9 @@ function verifConnexion()
 	}
 }
 
-function verifInscr()
+//var register = document.getElementById("formInscr");
+
+function verifRegister (e)
 {
 
 	var nom = document.getElementById("nom");
@@ -45,12 +47,18 @@ function verifInscr()
 		alert("Vous n'avez pas renseigné de mot de passe !");
 	}
 
-   var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+	var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
 
 	if (email.value.length == 0 || !regex.test(email.value))
 	{
 		email.style.borderColor = "#D42020";
 		alert("Votre email est invalide !");
 	}
-
+	e.preventDefault();
 }
+
+window.addEventListener("load", function ()
+{
+	document.getElementById("fromInscr").addEventListener("submit", verifRegister);
+	document.getElementById("formCo").addEventListener("submit", verifConnexion);
+});
