@@ -24,24 +24,28 @@ function verifRegister (e)
 	{
 		nom.style.borderColor = "#D42020";
 		alert("Vous n'avez pas renseigné votre nom !");
+		e.preventDefault();
 	}
 
 	if (prenom.value.length == 0)
 	{
 		prenom.style.borderColor = "#D42020";
 		alert("Vous n'avez pas renseigné votre prenom !");
+		e.preventDefault();
 	}
 
 	if (pseudo.value.length == 0)
 	{
 		pseudo.style.borderColor = "#D42020";
 		alert("Vous n'avez pas renseigné votre pseudo !");
+		e.preventDefault();
 	}
 
 	if (password.value.length == 0)
 	{
 		password.style.borderColor = "#D42020";
 		alert("Vous n'avez pas renseigné de mot de passe !");
+		e.preventDefault();
 	}
 
 	var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
@@ -50,16 +54,17 @@ function verifRegister (e)
 	{
 		email.style.borderColor = "#D42020";
 		alert("Votre email est invalide !");
+		e.preventDefault();
 	}
-	e.preventDefault();
+	
 }
 
 window.addEventListener("load", function ()
 {
-	var fromInscr = document.getElementById("fromInscr");
+	var formInscr = document.getElementById("formInscr");
 	console.log("passe");
 	var formCo = document.getElementById("formCo");
 
-	fromInscr.addEventListener("submit", verifRegister);
+	formInscr.addEventListener("submit", verifRegister);
 	formCo.addEventListener("submit", verifConnexion);
 });
