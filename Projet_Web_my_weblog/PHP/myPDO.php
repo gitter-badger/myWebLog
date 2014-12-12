@@ -5,7 +5,7 @@
 	$home .= ".mysql/mysql.sock"; 
 	try
 	{
-		$connect = new PDO('mysql:host=localhost;dbname=myweblog;unix_socket=/home/beors_s/.mysql/mysql.sock', 'root', '');
+		$connect = new PDO('mysql:host=localhost;dbname=myweblog;unix_socket=/home/mesa-g_f/.mysql/mysql.sock', 'root', '');
 	}
 	catch(PDOException $except)
 	{
