@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <h1><a href="accueil.php"><img src="../img/homeWhite.png" alt="logo home" id="acc"><span>Accueil</span></a></h1>
 
 <nav id="navTop">
