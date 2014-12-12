@@ -1,14 +1,6 @@
 <?php
-	session_start();
-	if(isset($_SESSION['login']) && isset($_SESSION['pwd']))
-	{}
-	else
-	{
-		header('Location: ../index.php');
-	}
-	$_SESSION['admin'] === false ? header('Location: ../PHP/accueil.php') : "";
+	include('droitAdmin.php');
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,7 +36,7 @@
 	</div>
 	<div id="gestion">
 		<ul>
-			<li><a href="">Gestion des membres</a></li>
+			<li><a href="membre.php">Gestion des membres</a></li>
 			<li><a href="#">Forum</a></li>
 			<li><a href="#">Livre d'or</a></li>
 		</ul>

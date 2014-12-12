@@ -8,7 +8,7 @@ include("myPDO.php");
 
 	$obj = "De " . $_SESSION['name'] . " : " . $_POST['object'] . ", " . $_SESSION['mail'];
 
-	mail("sofiane.beors@epitech.eu", $obj, $message);
+	mail("coquelet.c@gmail.com", $obj, $message);
 
 ?>
 
